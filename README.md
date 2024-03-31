@@ -1,5 +1,3 @@
-
-
 # Pet Store API
 
 [![pyton](https://img.shields.io/badge/python-latest-blue.svg)](https://www.python.org/downloads/release/python-370/)
@@ -58,7 +56,7 @@ Pet Store API is a simple RESTful API that allows you to manage a pet store. It 
 1. Clone the repository
 
 ```bash
-git clone
+git clone https://github.com/AdhamMadkour/pet_store.git
 ```
 
 2. Remove .example from .env.example file

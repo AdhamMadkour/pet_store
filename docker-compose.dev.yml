@@ -1,0 +1,16 @@
+version: '3.11'
+
+services:
+  api: &api
+    build:
+      context: .
+      dockerfile: docker/dev/Dockerfile
+    image: pet_store_api
+    command: poetry run python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./.env
+    restart: unless-stopped
